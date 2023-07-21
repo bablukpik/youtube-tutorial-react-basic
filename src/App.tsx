@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
-import Users from "./components/Users/Users";
-import { User } from "./components/Users/type";
+import Users from "./components/propsState/Users/Users";
+import { User } from "./components/propsState/Users/type";
 
 function App() {
   const [username, setUsername] = useState("");
