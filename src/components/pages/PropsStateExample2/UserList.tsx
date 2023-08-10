@@ -1,8 +1,7 @@
-import React from "react";
-import { User, UsersProps } from "./type";
+import { User, UsersProps } from "../../../types/propsState.type";
 
 
-export default function Users({ userList }: UsersProps) {
+export default function UserList({ userList }: UsersProps) {
   return (
     <div>
       <ul>

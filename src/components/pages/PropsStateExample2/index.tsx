@@ -1,6 +1,7 @@
 import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
-import Users from "../../propsState/Users";
-import { User } from "../../propsState/Users/type";
+import { User } from "../../../types/propsState.type";
+import UserList from "./UserList";
+import { Link } from "react-router-dom";
 
 function ProsStateExample2() {
   const [inputValue, setInputValue] = useState<User>({
@@ -52,7 +53,9 @@ function ProsStateExample2() {
         />
         <button>Submit</button>
       </form>
-      <Users userList={userList} />
+      <UserList userList={userList} />
+      <br />
+      <Link to="/">Back to Home</Link>
     </>
   );
 }

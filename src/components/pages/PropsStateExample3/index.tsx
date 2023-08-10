@@ -1,6 +1,7 @@
 import React, { FormEvent, useRef, useState } from "react";
-import Users from "../../propsState/Users";
-import { User } from "../../propsState/Users/type";
+import { User } from "../../../types/propsState.type";
+import UserList from "./UserList";
+import { Link } from "react-router-dom";
 
 function ProsStateExample3() {
   const [userList, setUserList] = useState<User[]>([]);
@@ -49,7 +50,9 @@ function ProsStateExample3() {
         />
         <button>Submit</button>
       </form>
-      <Users userList={userList} />
+      <UserList userList={userList} />
+      <br />
+      <Link to="/">Back to Home</Link>
     </>
   );
 }
