@@ -19,6 +19,7 @@ function App() {
     // react batching
     // setCount(count + 1); // 0+1 = 1
     // setCount(count + 1); // 1+1 = 2
+    // setCount(count + 1); // 2+1 = 3
     setCount((prevCount) => (prevCount + 3));
   };
 
