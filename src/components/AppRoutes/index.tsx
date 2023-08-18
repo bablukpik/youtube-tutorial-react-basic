@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import PropsStateExample2 from "../pages/PropsStateExample2";
 import PropsStateExample3 from "../pages/PropsStateExample3";
 import PropsStateExample from "../pages/PropsStateExample";
+import UseEffect from "../pages/hooks/UseEffect";
 
 export default function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ export default function AppRoutes() {
         <Route path="/props-state-example" element={<PropsStateExample />} />
         <Route path="/props-state-example2" element={<PropsStateExample2 />} />
         <Route path="/props-state-example3" element={<PropsStateExample3 />} />
+        <Route path="/use-effect" element={<UseEffect />} />
       </Routes>
     </>
   );

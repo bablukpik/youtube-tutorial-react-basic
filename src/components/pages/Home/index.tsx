@@ -14,6 +14,9 @@ function Home() {
         <li>
           <Link to="props-state-example3">Props and State Part-3</Link>
         </li>
+        <li>
+          <Link to="use-effect">UseEffect Hook</Link>
+        </li>
       </ul>
     </>
   );
