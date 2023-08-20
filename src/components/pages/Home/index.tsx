@@ -17,6 +17,9 @@ function Home() {
         <li>
           <Link to="use-effect">UseEffect Hook</Link>
         </li>
+        <li>
+          <Link to="use-context">Use Context Hook</Link>
+        </li>
       </ul>
     </>
   );

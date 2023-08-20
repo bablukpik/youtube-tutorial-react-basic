@@ -2,6 +2,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./components/AppRoutes";
 import { useState, useMemo, useCallback } from "react";
 import UseEffect from "./components/pages/hooks/UseEffect";
+import UseContextProvider from "./components/pages/hooks/UseContext";
 
 function App() {
   let [count, setCount] = useState(0);
@@ -20,7 +21,7 @@ function App() {
     // setCount(count + 1); // 0+1 = 1
     // setCount(count + 1); // 1+1 = 2
     // setCount(count + 1); // 2+1 = 3
-    setCount((prevCount) => (prevCount + 3));
+    setCount((prevCount) => prevCount + 3);
   };
 
   // const handleCount = (countDataFromChild: number) => {
@@ -29,12 +30,14 @@ function App() {
 
   return (
     <>
-      <p> Parent: {count}</p>
-      <button onClick={handleClick}>Increase from App</button>
-      <UseEffect countClick={memoizedCount} onClick={memoizedHandleCount} />
-      <Router>
-        <AppRoutes />
-      </Router>
+      <UseContextProvider>
+        <p> Parent: {count}</p>
+        <button onClick={handleClick}>Increase from App</button>
+        <UseEffect countClick={memoizedCount} onClick={memoizedHandleCount} />
+        <Router>
+          <AppRoutes />
+        </Router>
+      </UseContextProvider>
     </>
   );
 }
