@@ -5,6 +5,7 @@ import PropsStateExample3 from "../pages/PropsStateExample3";
 import PropsStateExample from "../pages/PropsStateExample";
 import UseEffect from "../pages/hooks/UseEffect";
 import UseContextProvider from "../pages/hooks/UseContext";
+import UseReducer from "../pages/hooks/UseReducer";
 
 export default function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ export default function AppRoutes() {
         <Route path="/props-state-example3" element={<PropsStateExample3 />} />
         <Route path="/use-effect" element={<UseEffect />} />
         <Route path="/use-context" element={<UseContextProvider />} />
+        <Route path="/use-reducer" element={<UseReducer />} />
       </Routes>
     </>
   );

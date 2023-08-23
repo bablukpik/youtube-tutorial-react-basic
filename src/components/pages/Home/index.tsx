@@ -20,6 +20,9 @@ function Home() {
         <li>
           <Link to="use-context">Use Context Hook</Link>
         </li>
+        <li>
+          <Link to="use-reducer">Use Reducer Hook</Link>
+        </li>
       </ul>
     </>
   );
