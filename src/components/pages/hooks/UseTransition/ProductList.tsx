@@ -1,11 +1,11 @@
-import { useDeferredValue } from "react";
-
 interface Props {
   products: string[];
 }
 
 function ProductList({ products }: Props) {
-  const deferredProducts = useDeferredValue(products);
+  // useDeferred is alternative to useTransition hook
+  // const deferredProducts = useDeferredValue(products);
+  const deferredProducts = products;
   return (
     <ul>
       {deferredProducts.map((product) => (
