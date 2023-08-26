@@ -6,6 +6,7 @@ import PropsStateExample from "../pages/PropsStateExample";
 import UseEffect from "../pages/hooks/UseEffect";
 import UseContextProvider from "../pages/hooks/UseContext";
 import UseReducer from "../pages/hooks/UseReducer";
+import UseTransition from "../pages/hooks/UseTransition";
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
         <Route path="/use-effect" element={<UseEffect />} />
         <Route path="/use-context" element={<UseContextProvider />} />
         <Route path="/use-reducer" element={<UseReducer />} />
+        <Route path="/use-transition" element={<UseTransition />} />
       </Routes>
     </>
   );
