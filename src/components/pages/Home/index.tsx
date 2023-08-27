@@ -23,6 +23,12 @@ function Home() {
         <li>
           <Link to="use-reducer">Use Reducer Hook</Link>
         </li>
+        <li>
+          <Link to="use-transition">Use Transition Hook</Link>
+        </li>
+        <li>
+          <Link to="custom-hook">Custom Hook</Link>
+        </li>
       </ul>
     </>
   );
