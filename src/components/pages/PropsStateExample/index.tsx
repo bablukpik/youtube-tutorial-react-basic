@@ -36,7 +36,7 @@ function PropsStateExample() {
 
   return (
     <>
-      <h2>Users</h2>
+      <h1>Users</h1>
       <label htmlFor="fullname">Full Name</label>
       <input
         id="fullname"

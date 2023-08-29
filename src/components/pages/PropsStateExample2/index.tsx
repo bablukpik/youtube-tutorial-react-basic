@@ -31,7 +31,7 @@ function ProsStateExample2() {
 
   return (
     <>
-      <h2>Users</h2>
+      <h1>Users</h1>
       <label htmlFor="fullname">Full Name</label>
       <form onSubmit={handleSubmit} ref={formRef}>
         <input name="name" id="fullname" type="text" onChange={handleInput} />

@@ -35,16 +35,17 @@ function UseTransition() {
   }
 
   return (
-    <div>
+    <>
+      <h1>Use Transition Hook</h1>
       <p>{count}</p>
       <button onClick={() => setCount((prevCount) => prevCount + 1)}>
         Increase count
       </button>
       <br />
       <input type="text" onChange={updateFilterHandler} />
-      {isPending && <p style={{color: 'green'}}>Updating List...</p>}
+      {isPending && <p style={{ color: "green" }}>Updating List...</p>}
       <ProductList products={filteredProducts} />
-    </div>
+    </>
   );
 }
 

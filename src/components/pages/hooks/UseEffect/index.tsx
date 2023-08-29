@@ -19,7 +19,7 @@ function UseEffect({ countClick, onClick }: Props) {
     // setCount(count + 1); // 0+1 = 1
     // setCount(count + 1); // 1+1 = 2
     // setCount(count + 1); // 2+1 = 3
-    setCount((prevCount) => (prevCount + 3));
+    setCount((prevCount) => prevCount + 3);
     if (onClick) {
       onClick(count);
     }
@@ -28,12 +28,13 @@ function UseEffect({ countClick, onClick }: Props) {
   console.log("child re-rendered");
 
   return (
-    <div>
+    <>
+      <h1>Use Effect Hook</h1>
       <p>Child from Parent: {countClick}</p>
       <p>Child: {count}</p>
       <button onClick={handleClick}>Increase from Child</button>
       <p>User Context Data: {user.name}</p>
-    </div>
+    </>
   );
 }
 
