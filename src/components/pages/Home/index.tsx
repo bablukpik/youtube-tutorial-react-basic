@@ -29,6 +29,9 @@ function Home() {
         <li>
           <Link to="custom-hook">Custom Hook</Link>
         </li>
+        <li>
+          <Link to="render-props">Render Props</Link>
+        </li>
       </ul>
     </>
   );

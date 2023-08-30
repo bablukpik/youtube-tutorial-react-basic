@@ -8,6 +8,7 @@ import UseContextProvider from "../pages/hooks/UseContext";
 import UseReducer from "../pages/hooks/UseReducer";
 import UseTransition from "../pages/hooks/UseTransition";
 import CustomHook from "../pages/hooks/CustomHook";
+import RenderProps from "../pages/RenderProps";
 
 export default function AppRoutes() {
   return (
@@ -22,6 +23,7 @@ export default function AppRoutes() {
         <Route path="/use-reducer" element={<UseReducer />} />
         <Route path="/use-transition" element={<UseTransition />} />
         <Route path="/custom-hook" element={<CustomHook />} />
+        <Route path="/render-props" element={<RenderProps />} />
       </Routes>
     </>
   );
