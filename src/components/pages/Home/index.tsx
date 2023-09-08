@@ -32,6 +32,9 @@ function Home() {
         <li>
           <Link to="render-props">Render Props</Link>
         </li>
+        <li>
+          <Link to="higher-order-component">Higher Order Component</Link>
+        </li>
       </ul>
     </>
   );

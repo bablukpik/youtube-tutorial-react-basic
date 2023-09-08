@@ -9,6 +9,7 @@ import UseReducer from "../pages/hooks/UseReducer";
 import UseTransition from "../pages/hooks/UseTransition";
 import CustomHook from "../pages/hooks/CustomHook";
 import RenderProps from "../pages/RenderProps";
+import HigherOrderComponent from "../pages/HigherOrderComponent";
 
 export default function AppRoutes() {
   return (
@@ -24,6 +25,7 @@ export default function AppRoutes() {
         <Route path="/use-transition" element={<UseTransition />} />
         <Route path="/custom-hook" element={<CustomHook />} />
         <Route path="/render-props" element={<RenderProps />} />
+        <Route path="/higher-order-component" element={<HigherOrderComponent />} />
       </Routes>
     </>
   );
