@@ -8,14 +8,11 @@ interface TodoListProps {
 
 function TodoList({ data }: TodoListProps) {
   return (
-    <div>
-      <h1>Higher Order Component</h1>
-      <ul>
-        {data.map((item) => (
-          <TodoItem key={item.id} item={item} />
-        ))}
-      </ul>
-    </div>
+    <ul>
+      {data.map((item) => (
+        <TodoItem key={item.id} item={item} />
+      ))}
+    </ul>
   );
 }
 

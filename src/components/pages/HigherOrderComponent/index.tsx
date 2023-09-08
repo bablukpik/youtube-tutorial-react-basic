@@ -1,4 +1,4 @@
-import TodoList from './TodoList';
+import TodoList from "./TodoList";
 
 export interface ItemType {
   id: string;
@@ -7,8 +7,8 @@ export interface ItemType {
 }
 
 const TODOS: ItemType[] = [
-  { id: '1', task: 'Do this', completed: true },
-  { id: '2', task: 'Do that', completed: false },
+  { id: "1", task: "Do this", completed: true },
+  { id: "2", task: "Do that", completed: false },
 ];
 
 const fetchData = () => ({ data: TODOS, isLoading: true });
@@ -19,7 +19,12 @@ function HigherOrderComponent() {
   // if (isLoading) return <div>Loading data.</div>;
   // if (!data) return <div>No data loaded yet.</div>;
   // if (!data.length) return <div>Data is empty.</div>;
-  return <TodoList data={data} isLoading={isLoading} />;
+  return (
+    <>
+      <h1>Higher Order Component</h1>
+      <TodoList data={data} isLoading={isLoading} />;
+    </>
+  );
 }
 
 export default HigherOrderComponent;
