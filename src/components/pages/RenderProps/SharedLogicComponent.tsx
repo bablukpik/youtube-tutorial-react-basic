@@ -5,7 +5,7 @@ interface Props {
 }
 
 const SharedLogicComponent = ({ render }: Props) => {
-  const sharedData = "Shared data from logic";
+  const sharedData = "Shared data from Render Props Component";
 
   // Perform any shared logic here
   return <>{render(sharedData)}</>;
